@@ -5,8 +5,7 @@ WORKDIR /app
 
 # Copy pom.xml e maven wrapper
 COPY pom.xml .
-COPY mvnw .
-COPY .mvn .mvn
+
 
 # Download dependencies
 RUN mvn dependency:resolve
