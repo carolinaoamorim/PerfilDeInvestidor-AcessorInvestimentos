@@ -29,3 +29,6 @@ target/
 # IDEs
 .idea/
 .vscode/
+
+# Variáveis de ambiente locais
+.env

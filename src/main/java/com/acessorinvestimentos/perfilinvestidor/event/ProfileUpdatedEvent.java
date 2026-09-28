@@ -1,6 +1,6 @@
 package com.acessorinvestimentos.perfilinvestidor.event;
 
-import br.insper.investorprofile.model.enums.InvestorType;
+import com.acessorinvestimentos.perfilinvestidor.model.enums.InvestorType;
 
 import java.time.Instant;
 import java.time.temporal.ChronoUnit;

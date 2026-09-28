@@ -1,6 +1,6 @@
 package com.acessorinvestimentos.perfilinvestidor.dto;
 
-import br.insper.investorprofile.model.enums.InvestorType;
+import com.acessorinvestimentos.perfilinvestidor.model.enums.InvestorType;
 
 import java.time.LocalDateTime;
 import java.util.UUID;

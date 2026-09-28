@@ -1,15 +1,15 @@
 package com.acessorinvestimentos.perfilinvestidor.service;
 
-import br.insper.investorprofile.dto.ClassificationResult;
-import br.insper.investorprofile.dto.InvestorProfileResponse;
-import br.insper.investorprofile.event.ProfileEventPublisher;
-import br.insper.investorprofile.exception.ResourceNotFoundException;
-import br.insper.investorprofile.mapper.ProfileMapper;
-import br.insper.investorprofile.model.InvestorProfile;
-import br.insper.investorprofile.model.QuestionnaireResponse;
-import br.insper.investorprofile.model.enums.InvestorType;
-import br.insper.investorprofile.repository.InvestorProfileRepository;
-import br.insper.investorprofile.repository.QuestionnaireResponseRepository;
+import com.acessorinvestimentos.perfilinvestidor.dto.ClassificationResult;
+import com.acessorinvestimentos.perfilinvestidor.dto.InvestorProfileResponse;
+import com.acessorinvestimentos.perfilinvestidor.event.ProfileEventPublisher;
+import com.acessorinvestimentos.perfilinvestidor.exception.ResourceNotFoundException;
+import com.acessorinvestimentos.perfilinvestidor.mapper.ProfileMapper;
+import com.acessorinvestimentos.perfilinvestidor.model.InvestorProfile;
+import com.acessorinvestimentos.perfilinvestidor.model.QuestionnaireResponse;
+import com.acessorinvestimentos.perfilinvestidor.model.enums.InvestorType;
+import com.acessorinvestimentos.perfilinvestidor.repository.InvestorProfileRepository;
+import com.acessorinvestimentos.perfilinvestidor.repository.QuestionnaireResponseRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

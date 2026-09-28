@@ -1,6 +1,6 @@
 package com.acessorinvestimentos.perfilinvestidor.model;
 
-import br.insper.investorprofile.model.enums.InvestorType;
+import com.acessorinvestimentos.perfilinvestidor.model.enums.InvestorType;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;

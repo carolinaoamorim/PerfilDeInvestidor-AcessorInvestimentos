@@ -1,6 +1,6 @@
 package com.acessorinvestimentos.perfilinvestidor.event;
 
-import br.insper.investorprofile.model.enums.InvestorType;
+import com.acessorinvestimentos.perfilinvestidor.model.enums.InvestorType;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.AmqpException;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;

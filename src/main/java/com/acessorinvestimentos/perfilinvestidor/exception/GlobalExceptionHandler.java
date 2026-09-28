@@ -1,6 +1,6 @@
 package com.acessorinvestimentos.perfilinvestidor.exception;
 
-import br.insper.investorprofile.dto.ErrorResponse;
+import com.acessorinvestimentos.perfilinvestidor.dto.ErrorResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;

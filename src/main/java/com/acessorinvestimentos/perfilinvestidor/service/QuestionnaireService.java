@@ -1,14 +1,14 @@
 package com.acessorinvestimentos.perfilinvestidor.service;
 
-import br.insper.investorprofile.dto.InvestorProfileResponse;
-import br.insper.investorprofile.dto.QuestionnaireDto;
-import br.insper.investorprofile.dto.QuestionnaireRequest;
-import br.insper.investorprofile.exception.IncompleteQuestionnaireException;
-import br.insper.investorprofile.exception.QuestionnaireAlreadyExistsException;
-import br.insper.investorprofile.exception.ResourceNotFoundException;
-import br.insper.investorprofile.mapper.ProfileMapper;
-import br.insper.investorprofile.model.QuestionnaireResponse;
-import br.insper.investorprofile.repository.QuestionnaireResponseRepository;
+import com.acessorinvestimentos.perfilinvestidor.dto.InvestorProfileResponse;
+import com.acessorinvestimentos.perfilinvestidor.dto.QuestionnaireDto;
+import com.acessorinvestimentos.perfilinvestidor.dto.QuestionnaireRequest;
+import com.acessorinvestimentos.perfilinvestidor.exception.IncompleteQuestionnaireException;
+import com.acessorinvestimentos.perfilinvestidor.exception.QuestionnaireAlreadyExistsException;
+import com.acessorinvestimentos.perfilinvestidor.exception.ResourceNotFoundException;
+import com.acessorinvestimentos.perfilinvestidor.mapper.ProfileMapper;
+import com.acessorinvestimentos.perfilinvestidor.model.QuestionnaireResponse;
+import com.acessorinvestimentos.perfilinvestidor.repository.QuestionnaireResponseRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

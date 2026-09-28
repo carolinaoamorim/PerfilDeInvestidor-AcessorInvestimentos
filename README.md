@@ -1,26 +1,48 @@
-# Acessor de Investimentos - Perfil de Investidor
+# Acessor de Investimentos - Serviço de Perfil
 
-Projeto Spring Boot basico com uma rota REST de Hello World.
+Aplica o questionário, guarda as respostas e calcula o perfil do investidor
+(`CONSERVATIVE`, `MODERATE` ou `AGGRESSIVE`). Quando o perfil muda, publica o
+evento `profile.updated` no RabbitMQ.
 
 ## Requisitos
 
-- Java 17+
+- Java 25
 - Maven
+- Docker (PostgreSQL e RabbitMQ)
 
 ## Como rodar
 
+Tudo com Docker Compose (serviço + PostgreSQL + RabbitMQ):
+
 ```bash
+cp .env.example .env
+docker compose up --build
+```
+
+Ou só a infraestrutura no Docker e a aplicação local:
+
+```bash
+docker compose up -d postgres rabbitmq
 mvn spring-boot:run
 ```
 
-Depois acesse:
+O schema do banco é criado pelas migrations do Flyway em
+`src/main/resources/db/migration`.
 
-```text
-GET http://localhost:8080/hello
+## Endpoints
+
+| Método | Rota | Descrição |
+| --- | --- | --- |
+| POST | `/profiles/questionnaire` | Responde o questionário (header `X-User-Id`) |
+| PUT | `/profiles/questionnaire` | Atualiza as respostas (header `X-User-Id`) |
+| GET | `/profiles/{userId}` | Perfil do investidor |
+| GET | `/profiles/{userId}/questionnaire` | Respostas do questionário |
+
+## Testes
+
+```bash
+mvn test
 ```
 
-Resposta:
-
-```text
-Hello World
-```
+- `unit/`: testes unitários dos services, publisher e controller
+- `integration/`: fluxo completo com H2 (modo PostgreSQL) e RabbitMQ mockado
