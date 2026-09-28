@@ -41,8 +41,11 @@ O schema do banco é criado pelas migrations do Flyway em
 ## Testes
 
 ```bash
-mvn test
+mvn verify
 ```
 
 - `unit/`: testes unitários dos services, publisher e controller
 - `integration/`: fluxo completo com H2 (modo PostgreSQL) e RabbitMQ mockado
+
+O relatório JaCoCo é gerado em `tests/`. O build exige pelo menos 80% de
+cobertura de instruções no projeto e em cada classe do pacote `service`.
