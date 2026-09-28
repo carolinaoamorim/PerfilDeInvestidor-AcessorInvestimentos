@@ -1,6 +1,6 @@
 package com.acessorinvestimentos.perfilinvestidor.repository;
 
-import br.insper.investorprofile.model.InvestorProfile;
+import com.acessorinvestimentos.perfilinvestidor.model.InvestorProfile;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

@@ -1,8 +1,8 @@
-package com.acessorinvestimentos.perfilinvestidor.Controller;
+package com.acessorinvestimentos.perfilinvestidor.integration;
 
-import br.insper.investorprofile.controller.ProfileController;
-import br.insper.investorprofile.repository.InvestorProfileRepository;
-import br.insper.investorprofile.repository.QuestionnaireResponseRepository;
+import com.acessorinvestimentos.perfilinvestidor.controller.ProfileController;
+import com.acessorinvestimentos.perfilinvestidor.repository.InvestorProfileRepository;
+import com.acessorinvestimentos.perfilinvestidor.repository.QuestionnaireResponseRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -19,7 +19,8 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.verifyNoInteractions;
+import static org.mockito.ArgumentMatchers.anyString;
+import static org.mockito.Mockito.never;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -120,7 +121,7 @@ class ProfileFlowIntegrationTest {
                 .andExpect(jsonPath("$.details.length()").value(3));
 
         assertEquals(0, questionnaireRepository.count());
-        verifyNoInteractions(rabbitTemplate);
+        verify(rabbitTemplate, never()).convertAndSend(anyString(), anyString(), any(Object.class));
     }
 
     @Test

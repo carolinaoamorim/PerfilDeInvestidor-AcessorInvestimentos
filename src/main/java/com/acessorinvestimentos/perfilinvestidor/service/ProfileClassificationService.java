@@ -1,11 +1,11 @@
 package com.acessorinvestimentos.perfilinvestidor.service;
 
-import br.insper.investorprofile.model.QuestionnaireResponse;
-import br.insper.investorprofile.model.enums.ExperienceLevel;
-import br.insper.investorprofile.model.enums.FinancialGoal;
-import br.insper.investorprofile.model.enums.InvestmentHorizon;
-import br.insper.investorprofile.model.enums.InvestorType;
-import br.insper.investorprofile.model.enums.RiskTolerance;
+import com.acessorinvestimentos.perfilinvestidor.model.QuestionnaireResponse;
+import com.acessorinvestimentos.perfilinvestidor.model.enums.ExperienceLevel;
+import com.acessorinvestimentos.perfilinvestidor.model.enums.FinancialGoal;
+import com.acessorinvestimentos.perfilinvestidor.model.enums.InvestmentHorizon;
+import com.acessorinvestimentos.perfilinvestidor.model.enums.InvestorType;
+import com.acessorinvestimentos.perfilinvestidor.model.enums.RiskTolerance;
 import org.springframework.stereotype.Service;
 
 /**

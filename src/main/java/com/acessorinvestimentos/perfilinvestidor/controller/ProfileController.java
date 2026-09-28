@@ -1,10 +1,10 @@
 package com.acessorinvestimentos.perfilinvestidor.controller;
 
-import br.insper.investorprofile.dto.InvestorProfileResponse;
-import br.insper.investorprofile.dto.QuestionnaireDto;
-import br.insper.investorprofile.dto.QuestionnaireRequest;
-import br.insper.investorprofile.service.InvestorProfileService;
-import br.insper.investorprofile.service.QuestionnaireService;
+import com.acessorinvestimentos.perfilinvestidor.dto.InvestorProfileResponse;
+import com.acessorinvestimentos.perfilinvestidor.dto.QuestionnaireDto;
+import com.acessorinvestimentos.perfilinvestidor.dto.QuestionnaireRequest;
+import com.acessorinvestimentos.perfilinvestidor.service.InvestorProfileService;
+import com.acessorinvestimentos.perfilinvestidor.service.QuestionnaireService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

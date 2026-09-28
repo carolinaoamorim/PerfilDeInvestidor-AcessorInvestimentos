@@ -1,10 +1,10 @@
 package com.acessorinvestimentos.perfilinvestidor.mapper;
 
-import br.insper.investorprofile.dto.InvestorProfileResponse;
-import br.insper.investorprofile.dto.QuestionnaireDto;
-import br.insper.investorprofile.dto.QuestionnaireRequest;
-import br.insper.investorprofile.model.InvestorProfile;
-import br.insper.investorprofile.model.QuestionnaireResponse;
+import com.acessorinvestimentos.perfilinvestidor.dto.InvestorProfileResponse;
+import com.acessorinvestimentos.perfilinvestidor.dto.QuestionnaireDto;
+import com.acessorinvestimentos.perfilinvestidor.dto.QuestionnaireRequest;
+import com.acessorinvestimentos.perfilinvestidor.model.InvestorProfile;
+import com.acessorinvestimentos.perfilinvestidor.model.QuestionnaireResponse;
 import org.springframework.stereotype.Component;
 
 @Component

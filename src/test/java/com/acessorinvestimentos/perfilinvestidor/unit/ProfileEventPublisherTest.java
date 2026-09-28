@@ -1,8 +1,8 @@
-package com.acessorinvestimentos.perfilinvestidor.Service;
+package com.acessorinvestimentos.perfilinvestidor.unit;
 
-import br.insper.investorprofile.event.ProfileEventPublisher;
-import br.insper.investorprofile.event.ProfileUpdatedEvent;
-import br.insper.investorprofile.model.enums.InvestorType;
+import com.acessorinvestimentos.perfilinvestidor.event.ProfileEventPublisher;
+import com.acessorinvestimentos.perfilinvestidor.event.ProfileUpdatedEvent;
+import com.acessorinvestimentos.perfilinvestidor.model.enums.InvestorType;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
